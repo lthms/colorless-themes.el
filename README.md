@@ -8,3 +8,5 @@ north-bluish color palette.
 ## Screenshots
 
 ![rust](screenshots/rust.png)
+
+![coq](screenshots/coq.png)
