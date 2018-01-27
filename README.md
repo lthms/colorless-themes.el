@@ -5,6 +5,8 @@
 colorscheme for vim, and [nord](https://github.com/arcticicestudio/nord), a
 north-bluish color palette.
 
+`nordless` is distributed under the terms of the GPL-3.0.
+
 ## Screenshots
 
 ![rust](screenshots/rust.png)
