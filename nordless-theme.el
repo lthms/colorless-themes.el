@@ -30,42 +30,28 @@
 ;;; Code:
 (deftheme nordless "A mostly colorless theme")
 
-(defvar nordless-theme-colors-alist
-  '(("nord0"                      . "#2E3440") ; polar night
-    ("nord1"                      . "#3B4252")
-    ("nord2"                      . "#434C5E")
-    ("nord3"                      . "#4C566A")
-    ("nord4"                      . "#D8DEE9") ; snow storm
-    ("nord5"                      . "#E5E9F0")
-    ("nord6"                      . "#ECEFF4")
-    ("nord7"                      . "#8FBCBB") ; frost
-    ("nord8"                      . "#88C0D0")
-    ("nord9"                      . "#81A1C1")
-    ("nord10"                     . "#5E81AC")
-    ("nord11"                     . "#BF616A") ; aurora
-    ("nord12"                     . "#D08770")
-    ("nord13"                     . "#EBCB8B")
-    ("nord14"                     . "#A3BE8C")
-    ("nord15"                     . "#B48EAD")
-    )
-  )
+(let ((nord0   "#2E3440") ; polar night
+      (nord1   "#3B4252")
+      (nord2   "#434C5E")
+      (nord3   "#4C566A")
+      (nord4   "#D8DEE9") ; snow storm
+      (nord5   "#E5E9F0")
+      (nord6   "#ECEFF4")
+      (nord7   "#8FBCBB") ; frost
+      (nord8   "#88C0D0")
+      (nord9   "#81A1C1")
+      (nord10  "#5E81AC")
+      (nord11  "#BF616A") ; aurora
+      (nord12  "#D08770")
+      (nord13  "#EBCB8B")
+      (nord14  "#A3BE8C")
+      (nord15  "#B48EAD")
+      )
 
-(defmacro nordless-theme-with-color-variables (&rest body)
-  "`let' bind all colors defined in `nordless-theme-colors-alist' around BODY.
-Also bind `class' to ((class color) (min-colors 89))."
-  (declare (indent 0))
-  `(let ((class '((class color) (min-colors 89)))
-         ,@(mapcar (lambda (cons)
-                     (list (intern (car cons)) (cdr cons)))
-                   nordless-theme-colors-alist))
-     ,@body))
-
-(nordless-theme-with-color-variables
   (custom-theme-set-variables
    'nordless
    `(fci-rule-color ,nord3)
    )
-
   (custom-theme-set-faces
    'nordless
    `(default ((t (:background ,nord0 :foreground ,nord4))))
