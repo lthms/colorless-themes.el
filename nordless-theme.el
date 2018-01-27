@@ -14,6 +14,7 @@
 ;;; You should have received a copy of the GNU General Public License
 ;;; along with this program. If not, see <http://www.gnu.org/licenses/>.
 
+;;; Author: Thomas Letan <contact@thomasletan.fr>
 ;;; URL: https://github.com/lethom/nordless-theme.el
 ;;; Version: 0.1
 ;;; License: GPL-3
