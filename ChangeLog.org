@@ -1,0 +1,5 @@
+#+TITLE: ChangeLog
+
+* unreleased
+
+- Improve the look and feel of patches
