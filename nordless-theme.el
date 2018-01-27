@@ -17,6 +17,7 @@
 ;;; URL: https://github.com/lethom/nordless-theme.el
 ;;; Version: 0.1
 ;;; License: GPL-3
+;;; Keywords: theme, dark
 
 ;;; Commentary:
 ;;; nordless has two main source of inspiration: nofrils[1], an extremely
