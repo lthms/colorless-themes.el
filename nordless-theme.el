@@ -14,6 +14,9 @@
 ;;; You should have received a copy of the GNU General Public License
 ;;; along with this program. If not, see <http://www.gnu.org/licenses/>.
 
+;;; URL: https://github.com/lethom/nordless-theme.el
+;;; Version: 0.1
+
 ;;; Commentary:
 ;;; nordless has two main source of inspiration: nofrils[1], an extremely
 ;;; minimalist colorscheme for vim, and nord[2], a north-bluish color palette.
@@ -24,7 +27,7 @@
 ;;; Code:
 (deftheme nordless "A mostly colorless theme")
 
-(defvar nordless-colors-alist
+(defvar nordless-theme-colors-alist
   '(("nord0"                      . "#2E3440") ; polar night
     ("nord1"                      . "#3B4252")
     ("nord2"                      . "#434C5E")
@@ -44,17 +47,17 @@
     )
   )
 
-(defmacro nordless-with-color-variables (&rest body)
-  "`let' bind all colors defined in `nordless-colors-alist' around BODY.
+(defmacro nordless-theme-with-color-variables (&rest body)
+  "`let' bind all colors defined in `nordless-theme-colors-alist' around BODY.
 Also bind `class' to ((class color) (min-colors 89))."
   (declare (indent 0))
   `(let ((class '((class color) (min-colors 89)))
          ,@(mapcar (lambda (cons)
                      (list (intern (car cons)) (cdr cons)))
-                   nordless-colors-alist))
+                   nordless-theme-colors-alist))
      ,@body))
 
-(nordless-with-color-variables
+(nordless-theme-with-color-variables
   (custom-theme-set-variables
    'nordless
    `(fci-rule-color ,nord3)
@@ -197,5 +200,6 @@ Also bind `class' to ((class color) (min-colors 89))."
   )
 
 (provide-theme 'nordless)
+(provide 'nordless-theme)
 
 ;;; nordless-theme.el ends here
