@@ -174,7 +174,7 @@
    '(helm-ff-prefix ((t ())))
    '(helm-ff-directory ((t (:weight bold))))
    '(helm-ff-dotted-directory ((t (:weight bold))))
-   `(variable-pitch ((t (:background ,nord3))))
+   `(variable-pitch ((t ())))
    `(highlight ((t (:background ,nord3))))
    `(company-tooltip ((t (:foreground ,nord0 :background ,nord5))))
    `(company-scrollbar-fg ((t (:background ,nord0))))
