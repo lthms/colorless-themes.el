@@ -91,6 +91,7 @@
    '(dired-directory ((t (:weight bold))))
    '(diredp-file-suffix ((t ())))
    '(diredp-ignored-file-name ((t ())))
+   `(org-footnote ((t ())))
    `(org-level-1 ((t (:height 1.2))))
    `(org-level-2 ((t (:height 1.1))))
    `(org-level-3 ((t ())))
