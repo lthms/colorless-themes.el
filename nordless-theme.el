@@ -185,6 +185,8 @@
    '(company-tooltip-common ((t (:weight bold))))
    `(company-preview-common ((t ())))
    `(company-preview ((t (:background ,nord4 :foreground ,nord0))))
+   `(sh-heredoc ((t (:foreground ,nord7 :weight bold))))
+   `(sh-quoted-exec ((t ())))
    )
   )
 
