@@ -112,7 +112,7 @@
    '(org-document-info ((t ())))
    '(proof-tactics-name-face ((t ())))
    '(proof-tacticals-name-face ((t ())))
-   `(proof-locked-face ((t (:foreground ,nord14))))
+   `(proof-locked-face ((t (:background ,nord3))))
    `(proof-queue-face ((t (:foreground ,nord15))))
    `(proof-error-face ((t (:foreground ,nord11))))
    `(proof-warning-face ((t (:foreground ,nord12))))
