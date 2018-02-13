@@ -88,6 +88,7 @@
    `(show-paren-match ((t (:foreground ,nord8 :weight bold))))
    `(show-paren-mismatch ((t (:foreground ,nord11 :weight bold))))
    `(hl-paren-face ((t (:foreground ,nord8 :weight bold))))
+   '(dired-directory ((t (:weight bold))))
    '(diredp-file-suffix ((t ())))
    '(diredp-ignored-file-name ((t ())))
    `(org-level-1 ((t (:height 1.2))))
