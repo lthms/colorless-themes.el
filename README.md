@@ -14,3 +14,5 @@ north-bluish color palette.
 ![coq](screenshots/coq.png)
 
 ![patch](screenshots/patch.png)
+
+![Elixir](screenshots/elixir.png)
