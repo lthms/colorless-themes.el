@@ -174,6 +174,7 @@
    '(markdown-link-face ((t ())))
    '(markdown-url-face ((t (:underline t))))
    '(font-latex-warning-face ((t (:slant italic))))
+   '(font-latex-bold-face ((t (:weight bold))))
    '(font-latex-sedate-face ((t ())))
    '(font-latex-string-face ((t (:weight bold))))
    '(font-latex-math-face ((t ())))
