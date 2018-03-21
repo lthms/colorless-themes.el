@@ -1,4 +1,4 @@
-# nordless
+# nordless [![MELPA](https://melpa.org/packages/nordless-theme-badge.svg)](https://melpa.org/#/nordless-theme)
 
 `nordless` is a mostly colorless theme, with two main source of inspiration:
 [nofrils](https://github.com/robertmeta/nofrils), an extremely minimalist
