@@ -214,6 +214,9 @@
    `(company-preview ((t (:background ,nord4 :foreground ,nord0))))
    `(sh-heredoc ((t (:foreground ,nord7 :weight bold))))
    `(sh-quoted-exec ((t ())))
+   '(tuareg-font-lock-governing-face ((t ())))
+   '(tuareg-font-lock-operator-face ((t ())))
+   '(tuareg-font-double-colon-face ((t ())))
    )
   )
 
