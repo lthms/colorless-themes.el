@@ -206,34 +206,6 @@
 
      (provide-theme ',name)))
 
-(colorless-themes-make-colorless-theme nordless+
-                                       "#1E222E"
-                                       "#293040"
-                                       "#313B4F"
-                                       "#3B465E"
-                                       "#E7ECF3"
-                                       "#F1F3F8"
-                                       "#F5F7FA"
-                                       "#8FD2E0"
-                                       "#D05461"
-                                       "#E08B6B"
-                                       "#F4DC97"
-                                       "#B3CF95")
-
-(colorless-themes-make-colorless-theme hydrangealess
-                                       "#1e222c"    ; bg
-                                       "#363a44"    ; bg+
-                                       "#2a303b"    ; current-line
-                                       "#4b5463"    ; fade
-                                       "#c3d5ec"    ; fg
-                                       "#F1F3F8"    ; fg2
-                                       "#F5F7FA"    ; fg3
-                                       "#e242ac"    ; docs
-                                       "#e91e63"    ; red
-                                       "#E08B6B"    ; orange
-                                       "#F4DC97"    ; yellow
-                                       "#B3CF95")   ; green
-
 ;;;###autoload
 (when load-file-name
   (add-to-list 'custom-theme-load-path
