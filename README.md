@@ -1,15 +1,12 @@
-# nordless [![MELPA](https://melpa.org/packages/nordless-theme-badge.svg)](https://melpa.org/#/nordless-theme)
+# colorless-themes
 
-`colorless-themes` is distributed under the terms of the GPL-3.0.
+`colorless-themes` is a collection of “mostly colorless themes.” They are
+distributed under the terms of the GPL-3.0.
 
-## Screenshots
+Currently, this repository features:
 
-### `nordless`
-
-![rust](screenshots/rust.png)
-
-![coq](screenshots/coq.png)
-
-![patch](screenshots/patch.png)
-
-![Elixir](screenshots/elixir.png)
+- `nordless+`, dark and blue, inspired by
+  [nord](https://github.com/arcticicestudio/nord) but with a higher contrast
+- `hydrangealess`, dark and magenta, inspired by
+  [hydrangea](https://github.com/yuttie/hydrangea-emacs)
+- `seagreenless`, light and seagreen
