@@ -41,6 +41,7 @@
      (custom-theme-set-faces
       ',name
       '(default ((t (:background ,bg :foreground ,fg))))
+      '(cursor ((t (:background ,fg2 :forground ,bg+))))
       '(mode-line ((t (:background ,fade))))
       '(mode-line-inactive ((t ())))
       '(powerline-active1 ((t (:background ,bg))))
