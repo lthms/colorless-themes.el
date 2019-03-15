@@ -1,6 +1,6 @@
-;;; lavenderless-themes.el --- A collection of mostly colorless theme
+;;; lavenderless-theme.el --- A colorless theme inspired by Lavender
 
-;; Copyright (C) 2018 Thomas Letan
+;; Copyright (C) 2019 Thomas Letan
 ;;
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -16,12 +16,15 @@
 ;; along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 ;; Author: Thomas Letan <contact@thomasletan.fr>
-;; URL: https://github.com/lethom/nordless-theme.el
+;; URL: https://git.sr.ht/~lthms/colorles-themes.el
 ;; Version: 0.1
 ;; License: GPL-3
 ;; Keywords: theme
 
 ;;; Commentary:
+;; The main source of inspiration of this theme is Lavender.
+;;
+;; https://github.com/emacsfodder/emacs-lavender-theme/
 
 ;;; Code:
 (require 'colorless-themes)

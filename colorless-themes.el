@@ -1,6 +1,6 @@
 ;;; colorless-themes.el --- A collection of mostly colorless theme
 
-;; Copyright (C) 2018 Thomas Letan
+;; Copyright (C) 2018–2019 Thomas Letan
 ;;
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -16,22 +16,33 @@
 ;; along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 ;; Author: Thomas Letan <contact@thomasletan.fr>
-;; URL: https://github.com/lethom/nordless-theme.el
+;; URL: https://git.sr.ht/~lthms/colorless-themes.el
 ;; Version: 0.1
 ;; License: GPL-3
-;; Keywords: theme
+;; Keywords: themes
 
 ;;; Commentary:
 
-;; colorless-themes has two main source of inspiration: nofrils[1], an extremely
-;; minimalist colorscheme for vim, and nord[2], a north-bluish color palette.
+;; colorless-themes has taken over from, and more precisely generalize,
+;; nordless-theme[0], a minimalist theme inspired by nofrils[1], an extremely
+;; minimalist colorscheme for vim, and nord[2], a north-bluish color
+;; palette.
 ;;
+;; [0]: https://github.com/lthms/nordless-theme.el
 ;; [1]: https://github.com/robertmeta/nofrils
 ;; [2]: https://github.com/arcticicestudio/nord
 
 ;;; Code:
 (defmacro colorless-themes-make-colorless-theme (name bg bg+ current-line fade fg fg2 fg3 docs red orange yellow green)
-  "A generic macro to create new themes."
+  "A generic macro to create new themes.
+
+Using this macro, it only takes minutes to write a new colorless theme.  To
+create the theme NAME, you need to supply 12 different colors.  The three
+primary colors are BG, FG and DOCS.  They together form the identity of the
+newly created theme.  CURRENT-LINE is the background color of, well, the current
+line.  BG+ is notably being used in the modline.  FADE is used for whitespace
+characters.  FG2 and FG3 are used in the company tooltip.  Finally, RED, ORANGE,
+YELLOW and GREEN are pretty self-explanatory."
   `(progn
      (deftheme ,name "A mostly colorless theme")
      (custom-theme-set-variables

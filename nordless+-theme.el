@@ -1,6 +1,6 @@
-;;; nordless+-themes.el --- A collection of mostly colorless theme
+;;; nordless+-theme.el --- A higher contrast version of norldless-theme
 
-;; Copyright (C) 2018 Thomas Letan
+;; Copyright (C) 2018–2019 Thomas Letan
 ;;
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -16,7 +16,7 @@
 ;; along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 ;; Author: Thomas Letan <contact@thomasletan.fr>
-;; URL: https://github.com/lethom/nordless-theme.el
+;; URL: https://git.sr.ht/~lthms/colorles-themes.el
 ;; Version: 0.1
 ;; License: GPL-3
 ;; Keywords: theme
