@@ -13,3 +13,7 @@ Currently, this repository features:
 - `seagreenless`, light and seagreen
 - `lavenderless`, purple and mint, inspired by
   [Lavender](https://github.com/emacsfodder/emacs-lavender-theme/)
+
+If you want to report an issue, propose a patch to fix a glitch, or even propose
+new themes, feel free to do by sending an email to the [`colorless-dev` mailing
+list](~lthms/colorless-dev@lists.sr.ht).
