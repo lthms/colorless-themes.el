@@ -33,7 +33,7 @@
 ;; [2]: https://github.com/arcticicestudio/nord
 
 ;;; Code:
-(defmacro colorless-themes-make-colorless-theme (name bg bg+ current-line fade fg fg2 fg3 docs red orange yellow green)
+(defmacro colorless/make (name bg bg+ current-line fade fg fg2 fg3 docs red orange yellow green)
   "A generic macro to create new themes.
 
 Using this macro, it only takes minutes to write a new colorless theme.  To

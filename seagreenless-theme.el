@@ -28,19 +28,19 @@
 ;;; Code:
 (require 'colorless-themes)
 
-(colorless-themes-make-colorless-theme seagreenless
-                                       "#ecf0f1"     ; bg
-                                       "#95a5a6"     ; bg+
-                                       "#d3e5e3"     ; current-line
-                                       "#85ada9"     ; fade
-                                       "#2c3e50"     ; fg
-                                       "#34495e"     ; fg2
-                                       "#4e6984"     ; fg3
-                                       "#058e81"     ; docs
-                                       "#c0392b"     ; red
-                                       "#d35400"     ; orange
-                                       "#d98c10"     ; yellow
-                                       "#27ae60")    ; green
+(colorless/make seagreenless
+                "#ecf0f1"     ; bg
+                "#95a5a6"     ; bg+
+                "#d3e5e3"     ; current-line
+                "#85ada9"     ; fade
+                "#2c3e50"     ; fg
+                "#34495e"     ; fg2
+                "#4e6984"     ; fg3
+                "#058e81"     ; docs
+                "#c0392b"     ; red
+                "#d35400"     ; orange
+                "#d98c10"     ; yellow
+                "#27ae60")    ; green
 
 (provide 'seagreenless-theme)
 ;;; seagreenless-theme.el ends here
