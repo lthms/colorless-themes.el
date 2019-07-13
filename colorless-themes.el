@@ -218,14 +218,14 @@ YELLOW and GREEN are pretty self-explanatory."
 
      (provide-theme ',name)))
 
-(defun colorless/load (theme)
+(defmacro colorless/load (theme)
   "Load the theme THEME."
-  (if (daemonp)
-      (add-hook 'after-make-frame-functions
-                (lambda (frame)
-                  (select-frame frame)
-                  (load-theme theme t)))
-    (load-theme theme t)))
+  `(if (daemonp)
+       (add-hook 'after-make-frame-functions
+                 (lambda (frame)
+                   (select-frame frame)
+                   (load-theme ,theme t)))
+     (load-theme ,theme t)))
 
 ;;;###autoload
 (when load-file-name
