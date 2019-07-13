@@ -218,6 +218,15 @@ YELLOW and GREEN are pretty self-explanatory."
 
      (provide-theme ',name)))
 
+(defun colorless/load (theme)
+  "Load the theme THEME."
+  (if (daemonp)
+      (add-hook 'after-make-frame-functions
+                (lambda (frame)
+                  (select-frame frame)
+                  (load-theme theme t)))
+    (load-theme theme t)))
+
 ;;;###autoload
 (when load-file-name
   (add-to-list 'custom-theme-load-path
