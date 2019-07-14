@@ -151,6 +151,7 @@ YELLOW and GREEN are pretty self-explanatory."
       '(magit-diff-hunk-heading ((t (:slant italic))))
       '(magit-diff-hunk-heading-highlight ((t (:slant italic))))
       '(magit-header ((t (:weight bold))))
+      '(magit-section-highlight ((t (:background ,current-line))))
       '(magit-section-heading ((t (:weight bold))))
       '(magit-section-heading-selection ((t ())))
       '(magit-selection-title ((t ())))
