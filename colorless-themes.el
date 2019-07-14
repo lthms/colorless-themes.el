@@ -114,6 +114,7 @@ YELLOW and GREEN are pretty self-explanatory."
       '(org-meta-line ((t ())))
       '(org-document-info-keyword ((t ())))
       '(org-document-info ((t ())))
+      '(persp-selected-face ((t (:weight bold))))
       '(proof-tactics-name-face ((t ())))
       '(proof-tacticals-name-face ((t ())))
       '(proof-locked-face ((t (:background ,fade))))
