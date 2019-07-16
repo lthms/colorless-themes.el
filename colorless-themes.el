@@ -53,7 +53,7 @@ YELLOW and GREEN are pretty self-explanatory."
      (custom-theme-set-faces
       ',name
       '(default ((t (:background ,bg :foreground ,fg))))
-      '(cursor ((t (:background ,fg2 :forground ,bg+))))
+      '(cursor ((t (:background ,fg2 :foreground ,bg+))))
       '(mode-line ((t (:background ,fade))))
       '(mode-line-inactive ((t ())))
       '(powerline-active1 ((t (:background ,bg))))
