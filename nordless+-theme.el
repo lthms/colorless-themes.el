@@ -27,19 +27,19 @@
 ;;; Code:
 (require 'colorless-themes)
 
-(colorless/make nordless+
-                "#1E222E"
-                "#293040"
-                "#313B4F"
-                "#3B465E"
-                "#E7ECF3"
-                "#F1F3F8"
-                "#F5F7FA"
-                "#8FD2E0"
-                "#D05461"
-                "#E08B6B"
-                "#F4DC97"
-                "#B3CF95")
+(colorless-themes-make nordless+
+                       "#1E222E"
+                       "#293040"
+                       "#313B4F"
+                       "#3B465E"
+                       "#E7ECF3"
+                       "#F1F3F8"
+                       "#F5F7FA"
+                       "#8FD2E0"
+                       "#D05461"
+                       "#E08B6B"
+                       "#F4DC97"
+                       "#B3CF95")
 
 (provide 'nordless+-theme)
 ;;; nordless+-theme.el ends here

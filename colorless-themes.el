@@ -33,7 +33,10 @@
 ;; [2]: https://github.com/arcticicestudio/nord
 
 ;;; Code:
-(defmacro colorless/make (name bg bg+ current-line fade fg fg2 fg3 docs red orange yellow green)
+
+;; -*- lexical-binding: t -*-
+
+(defmacro colorless-themes-make (name bg bg+ current-line fade fg fg2 fg3 docs red orange yellow green)
   "A generic macro to create new themes.
 
 Using this macro, it only takes minutes to write a new colorless theme.  To
@@ -238,9 +241,14 @@ YELLOW and GREEN are pretty self-explanatory."
       '(tuareg-font-lock-operator-face ((t ())))
       '(tuareg-font-double-colon-face ((t ()))))
 
+     ;;;###autoload
+     (when load-file-name
+       (add-to-list 'custom-theme-load-path
+                    (file-name-as-directory (file-name-directory load-file-name))))
+
      (provide-theme ',name)))
 
-(defmacro colorless/load (theme)
+(defmacro colorless-themes-load (theme)
   "Load the theme THEME."
   `(if (daemonp)
        (add-hook 'after-make-frame-functions
@@ -248,11 +256,6 @@ YELLOW and GREEN are pretty self-explanatory."
                    (select-frame frame)
                    (load-theme ,theme t)))
      (load-theme ,theme t)))
-
-;;;###autoload
-(when load-file-name
-  (add-to-list 'custom-theme-load-path
-               (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide 'colorless-themes)
 ;;; colorless-themes.el ends here

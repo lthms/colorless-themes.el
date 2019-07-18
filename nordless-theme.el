@@ -31,19 +31,19 @@
 ;;; Code:
 (require 'colorless-themes)
 
-(colorless/make nordless
-                "#2E3440"    ; bg
-                "#3B4252"    ; bg+
-                "#434C5E"    ; current-line
-                "#4C566A"    ; fade
-                "#D8DEE9"    ; fg
-                "#E5E9F0"    ; fg2
-                "#ECEFF4"    ; fg3
-                "#88C0D0"    ; primary
-                "#BF616A"    ; red
-                "#D08770"    ; orange
-                "#EBCB8B"    ; yellow
-                "#A3BE8C")   ; green
+(colorless-themes-make nordless
+                       "#2E3440"    ; bg
+                       "#3B4252"    ; bg+
+                       "#434C5E"    ; current-line
+                       "#4C566A"    ; fade
+                       "#D8DEE9"    ; fg
+                       "#E5E9F0"    ; fg2
+                       "#ECEFF4"    ; fg3
+                       "#88C0D0"    ; primary
+                       "#BF616A"    ; red
+                       "#D08770"    ; orange
+                       "#EBCB8B"    ; yellow
+                       "#A3BE8C")   ; green
 
 (provide 'nordless-theme)
 ;;; nordless-theme.el ends here

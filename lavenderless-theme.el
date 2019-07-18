@@ -30,19 +30,19 @@
 ;;; Code:
 (require 'colorless-themes)
 
-(colorless/make lavenderless
-                "#29222E"    ; bg
-                "#362145"    ; bg+
-                "#3b3341"    ; current-line
-                "#51415C"    ; fade
-                "#E0CEED"    ; fg
-                "#d2c2d7"    ; fg2
-                "#ECC0FA"    ; fg3
-                "#68d3a7"    ; primary
-                "#cc3333"    ; red
-                "#FF6200"    ; orange
-                "#F4DC97"    ; yellow
-                "#A6E22E")   ; green
+(colorless-themes-make lavenderless
+                       "#29222E"    ; bg
+                       "#362145"    ; bg+
+                       "#3b3341"    ; current-line
+                       "#51415C"    ; fade
+                       "#E0CEED"    ; fg
+                       "#d2c2d7"    ; fg2
+                       "#ECC0FA"    ; fg3
+                       "#68d3a7"    ; primary
+                       "#cc3333"    ; red
+                       "#FF6200"    ; orange
+                       "#F4DC97"    ; yellow
+                       "#A6E22E")   ; green
 
 (provide 'lavenderless-theme)
 ;;; lavenderless-theme.el ends here
