@@ -1,4 +1,4 @@
-;;; colorless-themes.el --- A collection of mostly colorless theme
+;;; colorless-themes.el --- A macro to generate mostly colorless themes
 
 ;; Copyright (C) 2018–2019 Thomas Letan
 ;;
@@ -13,21 +13,20 @@
 ;; GNU General Public License for more details.
 ;;
 ;; You should have received a copy of the GNU General Public License
-;; along with this program. If not, see <http://www.gnu.org/licenses/>.
+;; along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 ;; Author: Thomas Letan <contact@thomasletan.fr>
 ;; URL: https://git.sr.ht/~lthms/colorless-themes.el
 ;; Version: 0.1
-;; Package-Requires: ((colorless-themes "0.1"))
 ;; License: GPL-3
-;; Keywords: themes
+;; Keywords: themes, macro
 
 ;;; Commentary:
 
-;; colorless-themes has taken over from, and more precisely generalize,
-;; nordless-theme[0], a minimalist theme inspired by nofrils[1], an extremely
-;; minimalist colorscheme for vim, and nord[2], a north-bluish color
-;; palette.
+;; colorless-themes generalize, nordless-theme[0], a minimalist theme inspired
+;; by nofrils[1], an extremely minimalist colorscheme for vim, and nord[2], a
+;; north-bluish color palette.  More precisely, it provides a macro called
+;; `colorless-themes-make' to easily derive new “mostly colorless” themes.
 ;;
 ;; [0]: https://github.com/lthms/nordless-theme.el
 ;; [1]: https://github.com/robertmeta/nofrils
