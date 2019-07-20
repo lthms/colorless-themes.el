@@ -19,16 +19,15 @@
 ;; URL: https://git.sr.ht/~lthms/colorless-themes.el
 ;; Version: 0.1
 ;; License: GPL-3
-;; Keywords: themes, macro
+;; Keywords: themes, faces
 
 ;;; Commentary:
 
-;; colorless-themes generalize, nordless-theme[0], a minimalist theme inspired
-;; by nofrils[1], an extremely minimalist colorscheme for vim, and nord[2], a
+;; colorless-themes generalizes nordless-theme, a minimalist theme inspired by
+;; nofrils[1], an extremely minimalist colorscheme for vim, and nord[2], a
 ;; north-bluish color palette.  More precisely, it provides a macro called
 ;; `colorless-themes-make' to easily derive new “mostly colorless” themes.
 ;;
-;; [0]: https://github.com/lthms/nordless-theme.el
 ;; [1]: https://github.com/robertmeta/nofrils
 ;; [2]: https://github.com/arcticicestudio/nord
 
