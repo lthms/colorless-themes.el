@@ -23,6 +23,7 @@
 ;; Keywords: theme
 
 ;;; Commentary:
+;; A higher-contrast version of nordless-theme.
 
 ;;; Code:
 (require 'colorless-themes)

@@ -23,10 +23,12 @@
 ;; Keywords: theme
 
 ;;; Commentary:
-;; The main source of inspiration of this theme is nord, an arctic, north-bluish
-;; color palette.
+;; This is a so-called colorless theme, derived thanks to the macro of the
+;; colorless-themes[1] package.  The main source of inspiration of this theme is
+;; nord[2], an arctic, north-bluish color palette.
 ;;
-;; https://github.com/arcticicestudio/nord
+;; [1]: https://git.sr.ht/~lthms/colorless-themes
+;; [2]: https://github.com/arcticicestudio/nord
 
 ;;; Code:
 (require 'colorless-themes)
