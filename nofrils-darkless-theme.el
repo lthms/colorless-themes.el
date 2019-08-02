@@ -32,18 +32,18 @@
 (require 'colorless-themes)
 
 (colorless-themes-make nofrils-darkless
-                       "#303030"    ; bg
-                       "#262626"    ; bg+
+                       "#262626"    ; bg
+                       "#000000"    ; bg+
                        "#404040"    ; current-line
                        "#6C6C6C"    ; fade
                        "#EEEEEE"    ; fg
-                       "#D4D4D4"    ; fg2
+                       "#C4C4C4"    ; fg2
                        "#EFEFEF"    ; fg3
                        "#AF5FFF"    ; primary
-                       "#FF0000"    ; red
+                       "#ed6666"    ; red
                        "#FFBF00"    ; orange
-                       "#FF7000"    ; yellow
-                       "#00FF00")   ; green
+                       "#FFF700"    ; yellow
+                       "#6ef065")   ; green
 
 (provide 'nofrils-darkless-theme)
 ;;; nofrils-darkless-theme.el ends here
