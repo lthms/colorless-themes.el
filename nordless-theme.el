@@ -39,8 +39,7 @@
                        "#434C5E"    ; current-line
                        "#4C566A"    ; fade
                        "#D8DEE9"    ; fg
-                       "#E5E9F0"    ; fg2
-                       "#ECEFF4"    ; fg3
+                       "#E5E9F0"    ; fg+
                        "#88C0D0"    ; primary
                        "#BF616A"    ; red
                        "#D08770"    ; orange

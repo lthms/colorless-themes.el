@@ -35,8 +35,7 @@
                        "#d3e5e3"     ; current-line
                        "#85ada9"     ; fade
                        "#2c3e50"     ; fg
-                       "#34495e"     ; fg2
-                       "#4e6984"     ; fg3
+                       "#34495e"     ; fg+
                        "#058e81"     ; docs
                        "#c0392b"     ; red
                        "#d35400"     ; orange

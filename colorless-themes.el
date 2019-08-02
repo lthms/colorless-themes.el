@@ -35,7 +35,7 @@
 
 ;; -*- lexical-binding: t -*-
 
-(defmacro colorless-themes-make (name bg bg+ current-line fade fg fg2 fg3 docs red orange yellow green)
+(defmacro colorless-themes-make (name bg bg+ current-line fade fg fg+ docs red orange yellow green)
   "A generic macro to create new themes.
 
 Using this macro, it only takes minutes to write a new colorless theme.  To
@@ -43,8 +43,8 @@ create the theme NAME, you need to supply 12 different colors.  The three
 primary colors are BG, FG and DOCS.  They together form the identity of the
 newly created theme.  CURRENT-LINE is the background color of, well, the current
 line.  BG+ is notably being used in the modline.  FADE is used for whitespace
-characters.  FG2 and FG3 are used in the company tooltip.  Finally, RED, ORANGE,
-YELLOW and GREEN are pretty self-explanatory."
+characters.  FG+ is used in the cursor and the company tooltip.  Finally, RED,
+ORANGE, YELLOW and GREEN are pretty self-explanatory."
   `(progn
      (deftheme ,name "A mostly colorless theme")
      (custom-theme-set-variables
@@ -54,7 +54,7 @@ YELLOW and GREEN are pretty self-explanatory."
      (custom-theme-set-faces
       ',name
       '(default ((t (:background ,bg :foreground ,fg))))
-      '(cursor ((t (:background ,fg2 :foreground ,bg+))))
+      '(cursor ((t (:background ,fg+ :foreground ,bg+))))
       '(mode-line ((t (:background ,fade))))
       '(mode-line-inactive ((t ())))
       '(isearch ((t (:weight bold :background ,green :foreground ,bg))))
@@ -229,12 +229,12 @@ YELLOW and GREEN are pretty self-explanatory."
       '(highlight ((t (:background ,fade))))
       '(compilation-warning ((t (:weight bold :underline t))))
       '(compilation-column-number ((t (:underline t))))
-      '(company-tooltip ((t (:foreground ,bg :background ,fg2))))
+      '(company-tooltip ((t (:foreground ,bg :background ,fg+))))
       '(company-scrollbar-fg ((t (:background ,bg))))
       '(company-scrollbar-bg ((t (:background ,fg))))
-      '(company-tooltip-selection ((t (:background ,fade :foreground ,fg3))))
+      '(company-tooltip-selection ((t (:background ,fade :foreground ,fg+))))
       '(company-tooltip-annotation ((t (:foreground ,fade))))
-      '(company-tooltip-annotation-selection ((t (:foreground ,fg2))))
+      '(company-tooltip-annotation-selection ((t (:foreground ,fg+))))
       '(company-tooltip-common ((t (:weight bold))))
       '(company-preview-common ((t ())))
       '(company-preview ((t (:background ,fg :foreground ,bg))))
