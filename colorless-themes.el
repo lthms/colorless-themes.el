@@ -242,7 +242,13 @@ ORANGE, YELLOW and GREEN are pretty self-explanatory."
       '(sh-quoted-exec ((t ())))
       '(tuareg-font-lock-governing-face ((t ())))
       '(tuareg-font-lock-operator-face ((t ())))
-      '(tuareg-font-double-colon-face ((t ()))))
+      '(tuareg-font-double-colon-face ((t ())))
+      '(header-line ((t (:background ,current-line :foreground ,fg))))
+      '(centaur-tabs-unselected ((t (:background ,current-line :foreground ,fg))))
+      '(centaur-tabs-unselected-modified ((t (:background ,current-line :foreground ,fg))))
+      '(centaur-tabs-selected ((t (:background ,bg :foreground ,fg))))
+      '(centaur-tabs-selected-modified ((t (:background ,bg :foreground ,fg))))
+      '(centaur-tabs-active-bar-face ((t (:background ,docs)))))
 
      ;;;###autoload
      (when load-file-name
