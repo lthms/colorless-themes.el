@@ -14,6 +14,8 @@ Currently, this repository features:
   [Lavender](https://github.com/emacsfodder/emacs-lavender-theme/)
 - `nofrils-darkless`, a clone of
   [nofrils-dark](https://github.com/robertmeta/nofrils)
+- `chocolateless`, chocolate taste, inspired by
+  [chocolate](https://github.com/SavchenkoValeriy/emacs-chocolate-theme)
 
 If you want to report an issue, propose a patch to fix a glitch, or even propose
 new themes, feel free to do by sending an email to the [`colorless-dev` mailing
