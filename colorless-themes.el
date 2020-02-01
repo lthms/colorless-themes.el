@@ -85,7 +85,7 @@ ORANGE, YELLOW and GREEN are pretty self-explanatory."
       '(font-lock-comment-delimiter-face ((t (:foreground ,docs))))
       '(font-lock-comment-face ((t (:foreground ,docs))))
       '(font-lock-doc-face ((t (:foreground ,docs))))
-      '(font-lock-string-face ((t (:weight bold))))
+      '(font-lock-string-face ((t (:weight bold :background ,bg+))))
       '(whitespace-space ((t (:foreground ,fade))))
       '(whitespace-tab ((t (:foreground ,fade))))
       '(whitespace-newline ((t (:foreground ,fade))))
