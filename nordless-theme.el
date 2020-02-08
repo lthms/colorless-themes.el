@@ -20,7 +20,7 @@
 ;; Version: 0.1
 ;; Package-Requires: ((colorless-themes "0.1"))
 ;; License: GPL-3
-;; Keywords: theme
+;; Keywords: faces theme
 
 ;;; Commentary:
 ;; This is a so-called colorless theme, derived thanks to the macro of the

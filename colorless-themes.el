@@ -19,7 +19,7 @@
 ;; URL: https://git.sr.ht/~lthms/colorless-themes.el
 ;; Version: 0.1
 ;; License: GPL-3
-;; Keywords: themes, faces
+;; Keywords: faces themes, faces
 
 ;;; Commentary:
 
