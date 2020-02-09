@@ -1,6 +1,6 @@
 ;;; colorless-themes.el --- A macro to generate mostly colorless themes
 
-;; Copyright (C) 2018–2019 Thomas Letan
+;; Copyright (C) 2018–2020 Thomas Letan
 ;;
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
