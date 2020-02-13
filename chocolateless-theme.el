@@ -1,4 +1,4 @@
-;;; chocolateless-theme.el --- A colorless theme inspired by Chocolate
+;;; chocolateless-theme.el --- A mostly colorless version of chocolate-theme
 
 ;; Copyright (C) 2020 Thomas Letan
 ;;
@@ -17,7 +17,7 @@
 
 ;; Author: Thomas Letan <contact@thomasletan.fr>
 ;; URL: https://git.sr.ht/~lthms/colorless-themes.el
-;; Version: 0.1
+;; Version: 0.2
 ;; Package-Requires: ((colorless-themes "0.1"))
 ;; License: GPL-3
 ;; Keywords: faces theme
@@ -29,6 +29,8 @@
 
 ;;; Code:
 (require 'colorless-themes)
+
+(deftheme chocolateless "A mostly colorless version of chocolate-theme")
 
 (colorless-themes-make chocolateless
                        "#33272A"    ; bg
@@ -43,5 +45,11 @@
                        "#e0c184"    ; yellow
                        "#43d089")   ; green
 
+;;;###autoload
+(when (and (boundp 'custom-theme-load-path) load-file-name)
+  (add-to-list 'custom-theme-load-path
+               (file-name-as-directory (file-name-directory load-file-name))))
+
+(provide-theme 'chocolateless)
 (provide 'chocolateless-theme)
 ;;; chocolateless-theme.el ends here

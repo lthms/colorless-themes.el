@@ -17,7 +17,7 @@
 
 ;; Author: Thomas Letan <contact@thomasletan.fr>
 ;; URL: https://git.sr.ht/~lthms/colorless-themes.el
-;; Version: 0.1
+;; Version: 0.2
 ;; Package-Requires: ((colorless-themes "0.1"))
 ;; License: GPL-3
 ;; Keywords: faces theme
@@ -28,6 +28,8 @@
 
 ;;; Code:
 (require 'colorless-themes)
+
+(deftheme seagreenless "A light and seagreen colorless theme")
 
 (colorless-themes-make seagreenless
                        "#ecf0f1"     ; bg
@@ -42,5 +44,11 @@
                        "#d98c10"     ; yellow
                        "#27ae60")    ; green
 
+;;;###autoload
+(when (and (boundp 'custom-theme-load-path) load-file-name)
+  (add-to-list 'custom-theme-load-path
+               (file-name-as-directory (file-name-directory load-file-name))))
+
+(provide-theme 'seagreenless)
 (provide 'seagreenless-theme)
 ;;; seagreenless-theme.el ends here

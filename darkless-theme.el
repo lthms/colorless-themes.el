@@ -1,4 +1,4 @@
-;;; darkless-theme.el --- Port of dark using colorless-themes
+;;; darkless-theme.el --- A colorless, gray theme
 
 ;; Copyright (C) 2019–2020 Thomas Letan
 ;;
@@ -17,7 +17,7 @@
 
 ;; Author: Thomas Letan <contact@thomasletan.fr>
 ;; URL: https://git.sr.ht/~lthms/colorless-themes.el
-;; Version: 0.1
+;; Version: 0.2
 ;; Package-Requires: ((colorless-themes "0.1"))
 ;; License: GPL-3
 ;; Keywords: faces theme
@@ -31,6 +31,8 @@
 ;;; Code:
 (require 'colorless-themes)
 
+(deftheme darkless "A colorless, gray theme")
+
 (colorless-themes-make darkless
                        "#2D2A2E"    ; bg
                        "#1F1E1E"    ; bg+
@@ -43,18 +45,12 @@
                        "#fc9867"    ; orange
                        "#ffd866"    ; yellow
                        "#a9dc76")   ; green
-;; (colorless-themes-make darkless
-;;                        "#3b254a"    ; bg
-;;                        "#432957"    ; bg+
-;;                        "#64467a"    ; current-line
-;;                        "#715685"    ; fade
-;;                        "#bd96d9"    ; fg
-;;                        "#decceb"    ; fg+
-;;                        "#ffffff"    ; primary
-;;                        "#eb0094"    ; red
-;;                        "#e66f00"    ; orange
-;;                        "#e2e600"    ; yellow
-;;                        "#00e68a")   ; green
 
+;;;###autoload
+(when (and (boundp 'custom-theme-load-path) load-file-name)
+  (add-to-list 'custom-theme-load-path
+               (file-name-as-directory (file-name-directory load-file-name))))
+
+(provide-theme 'darkless)
 (provide 'darkless-theme)
 ;;; darkless-theme.el ends here

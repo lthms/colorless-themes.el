@@ -17,7 +17,8 @@
 
 ;; Author: Thomas Letan <contact@thomasletan.fr>
 ;; URL: https://git.sr.ht/~lthms/colorless-themes.el
-;; Version: 0.1
+;; Package-Requires: ((emacs "24.1"))
+;; Version: 0.2
 ;; License: GPL-3
 ;; Keywords: faces themes, faces
 
@@ -46,11 +47,10 @@ line.  BG+ is notably being used in the modline.  FADE is used for whitespace
 characters.  FG+ is used in the cursor and the company tooltip.  Finally, RED,
 ORANGE, YELLOW and GREEN are pretty self-explanatory."
   `(progn
-     (deftheme ,name "A mostly colorless theme")
      (custom-theme-set-variables
       ',name
-      '(fci-rule-color ,fade)
-      )
+      '(fci-rule-color ,fade))
+
      (custom-theme-set-faces
       ',name
       '(default ((t (:background ,bg :foreground ,fg))))
@@ -67,6 +67,7 @@ ORANGE, YELLOW and GREEN are pretty self-explanatory."
       '(powerline-inactive2 ((t (:background ,fade))))
       '(link ((t (:underline ,docs))))
       '(secondary-selection ((t ())))
+      '(italic ((t (:slant italic))))
       '(shadow ((t ())))
       '(region ((t (:background ,fg :foreground ,bg))))
       '(escape-glyph ((t ())))
@@ -252,16 +253,9 @@ ORANGE, YELLOW and GREEN are pretty self-explanatory."
       '(centaur-tabs-unselected-modified ((t (:background ,current-line :foreground ,fg))))
       '(centaur-tabs-selected ((t (:background ,bg :foreground ,fg))))
       '(centaur-tabs-selected-modified ((t (:background ,bg :foreground ,fg))))
-      '(centaur-tabs-active-bar-face ((t (:background ,docs)))))
+      '(centaur-tabs-active-bar-face ((t (:background ,docs)))))))
 
-     ;;;###autoload
-     (when load-file-name
-       (add-to-list 'custom-theme-load-path
-                    (file-name-as-directory (file-name-directory load-file-name))))
-
-     (provide-theme ',name)))
-
-(defmacro colorless-themes-load (theme)
+(defmacro colorless-themes-load-theme (theme)
   "Load the theme THEME."
   `(if (daemonp)
        (add-hook 'after-make-frame-functions

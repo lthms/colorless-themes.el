@@ -1,4 +1,4 @@
-;;; nofrils-darkless-theme.el --- Port of nofrils-dark using colorless-themes
+;;; nofrils-darkless-theme.el --- A colorless port of the vim nofrils-dark theme
 
 ;; Copyright (C) 2019–2020 Thomas Letan
 ;;
@@ -17,7 +17,7 @@
 
 ;; Author: Thomas Letan <contact@thomasletan.fr>
 ;; URL: https://git.sr.ht/~lthms/colorless-themes.el
-;; Version: 0.1
+;; Version: 0.2
 ;; Package-Requires: ((colorless-themes "0.1"))
 ;; License: GPL-3
 ;; Keywords: faces theme
@@ -30,6 +30,8 @@
 
 ;;; Code:
 (require 'colorless-themes)
+
+(deftheme nofrils-darkless "A colorless port of the vim nofrils-dark theme")
 
 (colorless-themes-make nofrils-darkless
                        "#262626"    ; bg
@@ -44,5 +46,11 @@
                        "#FFF700"    ; yellow
                        "#6ef065")   ; green
 
+;;;###autoload
+(when (and (boundp 'custom-theme-load-path) load-file-name)
+  (add-to-list 'custom-theme-load-path
+               (file-name-as-directory (file-name-directory load-file-name))))
+
+(provide-theme 'nofrils-darkless)
 (provide 'nofrils-darkless-theme)
 ;;; nofrils-darkless-theme.el ends here

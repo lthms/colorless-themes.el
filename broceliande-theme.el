@@ -1,4 +1,4 @@
-;;; broceliande-theme.el --- A greenish colorless theme
+;;; broceliande-theme.el --- A mostly colorless greeny theme
 
 ;; Copyright (C) 2019–2020 Thomas Letan
 ;;
@@ -17,7 +17,7 @@
 
 ;; Author: Thomas Letan <contact@thomasletan.fr>
 ;; URL: https://git.sr.ht/~lthms/colorless-themes.el
-;; Version: 0.1
+;; Version: 0.2
 ;; Package-Requires: ((colorless-themes "0.1"))
 ;; License: GPL-3
 ;; Keywords: faces theme
@@ -29,6 +29,8 @@
 
 ;;; Code:
 (require 'colorless-themes)
+
+(deftheme broceliande "A mostly colorless greeny theme")
 
 (colorless-themes-make broceliande
                        "#001c1c"    ; bg
@@ -43,5 +45,11 @@
                        "#F4DC97"    ; yellow
                        "#A6E22E")   ; green
 
+;;;###autoload
+(when (and (boundp 'custom-theme-load-path) load-file-name)
+  (add-to-list 'custom-theme-load-path
+               (file-name-as-directory (file-name-directory load-file-name))))
+
+(provide-theme 'broceliande)
 (provide 'broceliande-theme)
 ;;; broceliande-theme.el ends here
