@@ -253,7 +253,8 @@ ORANGE, YELLOW and GREEN are pretty self-explanatory."
       '(centaur-tabs-unselected-modified ((t (:background ,current-line :foreground ,fg))))
       '(centaur-tabs-selected ((t (:background ,bg :foreground ,fg))))
       '(centaur-tabs-selected-modified ((t (:background ,bg :foreground ,fg))))
-      '(centaur-tabs-active-bar-face ((t (:background ,docs)))))))
+      '(centaur-tabs-active-bar-face ((t (:background ,docs))))
+      '(focus-unfocused ((t (:foreground ,fade)))))))
 
 (defmacro colorless-themes-load-theme (theme)
   "Load the theme THEME."
