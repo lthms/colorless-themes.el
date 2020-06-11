@@ -234,6 +234,7 @@ ORANGE, YELLOW and GREEN are pretty self-explanatory."
       '(highlight ((t (:background ,fade))))
       '(compilation-warning ((t (:weight bold :underline t))))
       '(compilation-column-number ((t (:underline t))))
+      '(popup-tip-face ((t (:foreground ,bg :background ,fg+))))
       '(company-tooltip ((t (:foreground ,bg :background ,fg+))))
       '(company-scrollbar-fg ((t (:background ,bg))))
       '(company-scrollbar-bg ((t (:background ,fg))))
