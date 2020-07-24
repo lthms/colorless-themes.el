@@ -148,6 +148,7 @@ ORANGE, YELLOW and GREEN are pretty self-explanatory."
       '(elixir-atom-face ((t ())))
       '(elixir-attribute-face ((t (:foreground ,docs))))
       '(haskell-pragma-face ((t (:weight bold :foreground ,docs))))
+      '(merlin-type-face ((t (:weight bold :background ,bg+))))
       '(diff-header ((t (:weight bold))))
       '(diff-context ((t ())))
       '(diff-file-header ((t (:foreground ,docs))))
