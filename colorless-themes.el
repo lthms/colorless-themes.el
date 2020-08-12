@@ -251,6 +251,7 @@ ORANGE, YELLOW and GREEN are pretty self-explanatory."
       '(tuareg-font-lock-governing-face ((t ())))
       '(tuareg-font-lock-operator-face ((t ())))
       '(tuareg-font-double-colon-face ((t ())))
+      '(tab-line ((t (:background ,current-line :foreground ,fg))))
       '(header-line ((t (:background ,current-line :foreground ,fg))))
       '(centaur-tabs-unselected ((t (:background ,current-line :foreground ,fg))))
       '(centaur-tabs-unselected-modified ((t (:background ,current-line :foreground ,fg))))
